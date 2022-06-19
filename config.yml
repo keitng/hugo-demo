@@ -1,0 +1,49 @@
+baseURL: ""
+languageCode: en-us
+title: Keit's First site ever
+theme: PaperMod
+
+#Hero section ↓
+params:
+    homeInfoParams:
+        Title: Hi, I'm Keit 👋
+        Content: Welcome to my personal blog! Here you'll find random blocks of words written by yours truly.
+
+    socialIcons: # optional
+        - name: "facebook"
+          url: "http://www.fb.com/n.xuantuankiet"
+        - name: "twitter"
+          url: "http://www.twitter.com/kittehUWU"
+
+#Search ↓
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+
+#baseUrl is base url
+#language code is language code
+#title is the title of your website
+#theme is picked from the hugo website
+
+#Additional code i added my self
+menu:
+  main:
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /Archives/
+      weight: 20
+    - identifer: search
+      name: Search
+      url: /Search/
+      weight: 5
+
+    #menu is the bar on webpages
+
+    #weight is the order of menu items
